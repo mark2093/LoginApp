@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
   onLogin() {
     this.submitted = true;
     console.log(this.loginform);
-    if(this.loginform.status === 'VALID'){
+    if(this.loginform.status === 'VALID') {
       // this.authenticationService.login(this.loginform.value.email, this.loginform.value.password).pipe().subscribe(data => {
       //     this.router.navigate(['/home']);  //Navigate to home after successful login
       //   },error => {
