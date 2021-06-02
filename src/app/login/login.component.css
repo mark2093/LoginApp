@@ -1,0 +1,34 @@
+/* .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    padding: 4rem 2rem;
+} */
+
+.container {
+    width: 40%;
+}
+
+.form-group-padding {
+    padding: 10px;
+    
+}
+
+.form-margin {
+    margin: 30px 0;
+}
+
+.is-invalid {
+    color: #dc3545;
+    margin-top: -20px;
+}
+
+.invalid {
+    border-color: #dc3545;
+}
+
+.card {
+    border: none;
+    margin-top: 80px;
+}
