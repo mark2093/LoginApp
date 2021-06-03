@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="header col-md-12">
+            <div class="col-md-8 header-label-1">Welcome to Employe Manager Dashboard</div>
+       </div>
+    </div>
+    <div class="row">
+        <div class="search-row col-md-12 padding-left-zero padding-right-zero">
+            <div class="col-md-10 padding-left-zero">
+                <input class="search-box" type="text" name="search" placeholder="Search....">
+            </div>
+        </div>
+    </div><br>
+    <div class="grid-container">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let employe of employees">
+                <div class="employe-card">
+                    <div class="employe-card-header">
+                        {{employe.name}} 
+                        <div><i class="far fa-angry"></i></div>
+                    </div>
+                    <div class="employe-card-body">
+                        <ul style="list-style-type:none; padding-top: 15px;">
+                            <li>{{employe.profile}}</li>
+                            <li>{{employe.place}}</li>
+                            <li><u style="cursor: pointer;">View Details</u></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
