@@ -1,16 +1,9 @@
 <div class="container">
-    <div class="row">
-        <div class="header col-md-12">
-            <div class="col-md-8 header-label-1">Welcome to Employe Manager Dashboard</div>
-       </div>
-    </div>
-    <div class="row">
-        <div class="search-row col-md-12 padding-left-zero padding-right-zero">
-            <div class="col-md-10 padding-left-zero">
-                <input class="search-box" type="text" name="search" placeholder="Search....">
-            </div>
-        </div>
+    <div class="row header">
+        <div class="col-md-8 header-label-1">Welcome to Employe Manager Dashboard</div>
+        <div class="col-md-4"><button class="logout-btn" type="submit" (click)="logout()">LOGOUT</button></div>
     </div><br>
+    <div class="row"> USERNAME : {{username}}</div><br>
     <div class="grid-container">
         <div fxLayout="row wrap" fxLayoutGap="16px grid">
             <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let employe of employees">

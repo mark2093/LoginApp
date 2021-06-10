@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   employees: any[] = [];
+  username: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.employees = [{
@@ -31,7 +33,13 @@ export class DashboardComponent implements OnInit {
       name: 'Liz Hill',
       profile: 'Developer',
       place: 'Dallas Taxas USA'
-    }]
+    }];
+    this.username = localStorage.getItem("username");
+  }
+
+  logout() {
+    localStorage.clear();
+    this.router.navigateByUrl('/login');
   }
 
 }

@@ -40,18 +40,14 @@ export class LoginComponent implements OnInit {
     this.submitted = true;
     console.log(this.loginform);
     if(this.loginform.status === 'VALID') {
+      localStorage.setItem("username", this.loginform.value.email);
+      this.router.navigateByUrl('/dashboard');
       const payload = {
         email: this.loginform.value.email,
         password: this.loginform.value.password
       };
       //this.store.dispatch(new LogIn(payload));
-      this.router.navigateByUrl('/dashboard');
-      // this.authenticationService.login(this.loginform.value.email, this.loginform.value.password).pipe().subscribe(data => {
-      //     this.router.navigate(['/home']);  //Navigate to home after successful login
-      //   },error => {
-      //     //log error
-      // });
-    }
+     }
     }
 
 }
