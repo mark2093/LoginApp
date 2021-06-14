@@ -9,6 +9,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+npm install
+npm install --save @angular/flex-layout@9.0.0-beta.31
+npm install --save @angular/flex-layout @angular/cdk
 
 ## Build
 
@@ -25,3 +28,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## What to improve
+
+The application could be more visually appealing by giving a nice picture image or background to it. Right now there is no real time service been used but it could have 'Sign Up' feature as well for registering new user. We can have search functionality to filter the employess on dashbpard page as user want to find. Right now the details of employees are hardcorded, actual data can be displayed once we point to real time services. Also on dashboard page the details of employees are given in grid format, there can be an option to let user choose between grid view or list view.
+
